@@ -1,0 +1,16 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: kumamuk-git
+      url-base: https://github.com/keebJP/zmk-config-pixi43
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3-branch
+      import: app/west.yml
+    - name: zmk-pmw3610-driver
+      remote: keebJP-git
+      revision: main
+  self:
+    path: config
